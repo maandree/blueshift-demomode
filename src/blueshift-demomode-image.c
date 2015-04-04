@@ -152,6 +152,9 @@ static uint32_t* int_split(char* buffer, size_t* out_n)
 }
 
 
+/* TODO precalculate */
+
+
 static inline void conv1(unsigned char* in, unsigned char* out, uint32_t* lut, size_t lutsize, uint32_t lutmax)
 {
   size_t n = ((uint32_t)*in * lutsize + maxval / 2) / maxval;
